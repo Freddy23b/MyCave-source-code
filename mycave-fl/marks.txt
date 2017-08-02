@@ -1,0 +1,23 @@
+DIFFERENCES : SITE LOCALHOST  -->  SITE EN LIGNE/PRODUCTION
+
+
+> BASE DE DONNEES : il faut se connecter à la DB en ligne :
+
+	try{
+        		$mycaveDb = new PDO('mysql:host=localhost;dbname=mycave_db;charset=utf8','root','',
+        		array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));// paramètre pour activer les erreurs
+    	}
+
+	-->
+
+	try{
+	    	$mycaveDb = new PDO('mysql:host=devzatafccdatabs.mysql.db;dbname=devzatafccdatabs;charset=utf8','devzatafccdatabs','Jemange1poir',
+	    	array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));// paramètre pour activer les erreurs
+    	}
+
+
+> NOMS DES TABLES : les tables en ligne sont incluses dans la DB WordPress de Devzata
+		      ceci explique la nécessité du préfixe "mc_" pour séparer ces tables des autres tables de la DB
+
+	- mycave -> mc_bottles
+	- users -> mc_users

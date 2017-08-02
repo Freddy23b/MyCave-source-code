@@ -1,0 +1,93 @@
+/*********** Items ************/
+
+.user-display {
+    height: 50px;
+    width: 100px;
+    margin-right: 5px;
+
+    color: white;
+    font-size: 0.9em;
+    font-style: italic;
+    background-color: $brdx-color;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.suggestion {
+    margin-right: 10px;
+    margin-top: 15px;
+
+    font-style: italic;
+}
+
+// items JavaScript :
+// basics.js :
+.confirm-div {/*cacher la div de confirmation de suppression*/
+    height: 0px;
+
+    overflow: hidden;// pour que le bouton compris dans cette div soit caché quand height = 0px
+}
+// basics2.js :
+.pop-up {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgba(0,0,0,0.5);
+}
+    .in-pop-up {
+        height: 0px;
+        
+        overflow: hidden;// pour cacher le bouton dans cette div
+
+        background-color: white;
+    }
+
+// Boutons :
+.btn {
+    height: 50px;
+    width: 100px;
+
+    color: white;
+    border-radius: 5px;
+}
+    .ajust-font-size {// pour le bouton de déconnexion
+        font-size: 11px;
+    }
+.btn:active, .btn:hover {
+    font-weight: bold;
+}
+.btn-style-1 {
+    background-color: $mauve-color;
+    border: 1px solid $prune-color;
+    box-shadow: 3px 3px 3px mediumslateblue;
+    
+}
+.btn-style-2 {
+    background-color: $brdx-color;
+    border: 1px solid $prune-color;
+}
+.btn-style-3 {
+    background-color: $brdx-color;
+    border: 1px solid $prune-color;
+    box-shadow: 3px 3px 3px mediumslateblue;
+}
+
+// Pagination :
+.pagination-ul {
+    display: flex;
+    margin-top: 30px;
+
+    list-style-type: none;
+}
+.pagination-ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 1.3em;
+}
+.arrow-icon {
+    width: 40px;
+}

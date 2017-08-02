@@ -1,0 +1,55 @@
+/*********** Tables ************/
+
+/* table comportant la liste des bouteilles */
+.bottles-table {
+  border-collapse: collapse;
+
+}
+    .bottles-table td {// les lignes du tableau
+        height: 130px;
+        width: 16.6%;
+
+        text-align: center;
+
+        border-top: 1px solid $prune-color;
+        border-bottom: 1px solid $prune-color;
+
+    }
+    .bottle-img {
+        max-height: 115px;
+    }
+    .update-bottle-img {
+        max-height: 200px;           
+    }
+    .select-icon {
+        width: 60px;
+    }
+    .select-icon:active, .select-icon:hover {// pour effet aussi sur les mobiles
+        width: 65px;
+    }
+    .fix-select-icon {
+        width: 60px;
+    }
+
+/* table pour une bouteille sélectionnée */
+.bottle-selected-table {
+    border-collapse: collapse;
+}
+    .first-column {
+        width: 25%;
+    }
+    .second-column {
+        width: 75%;
+    }
+    .bottle-selected-table td {
+        height: 45px;// pour avoir une hauteur minimum sur les lignes (min-height ne fonctionnant pas)
+
+        border-top: 1px solid $prune-color;
+        border-bottom: 1px solid $prune-color;
+    }
+    input {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+    }

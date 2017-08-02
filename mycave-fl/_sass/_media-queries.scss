@@ -1,0 +1,59 @@
+/*********** Media queries ************/
+
+// 1045px : 1er breakpoint
+@media all and (max-width: 1045px) {
+    .mycave-logo {
+        width: 200px;
+    }
+}
+@media all and (max-width: 1045px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+// 900px : 2ème breakpoint
+@media all and (max-width: 900px) {/* ne plus afficher ces colonnes complémentaires sur petit écran */
+    .plusColumn {
+        display: none;
+    }
+    .bottles-table td {
+        width: 33%;// puisqu'on est passé de 6 à 3 colonnes
+     }
+}
+
+// 680px : 3ème breakpoint
+@media all and (max-width: 680px) {
+    .header {
+        height: 172px;
+        flex-direction: column;
+        justify-content: center;// pour que les items soient centrés sur l'axe vertical
+    }
+    .adapt-height {
+        min-height: calc(100vh - 264px);// 264px = 178px + 86px (comme la hauteur du header augmente de 86px, il faut réduire adapt-height en conséquence)
+    }
+    h1 {
+        font-size: 1.2em;
+        margin-top: 2px;
+    }
+    .width-70-90 {
+        width: 90%;
+    }
+    .width-40-70 {
+        width: 70%;
+    }
+}
+
+// 590px : 4ème breakpoint
+@media all and (max-width: 590px) {
+    .bottle-img {
+        max-width: 100px;
+    }
+}
+
+// 340px : 5ème breakpoint (pour les pages avec un titre header trop long impliquant un retour à la ligne)
+@media all and (max-width: 340px) {
+    .long-h1 {
+        font-size: 1em;
+    }
+}  

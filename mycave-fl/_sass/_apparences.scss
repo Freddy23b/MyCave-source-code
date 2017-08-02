@@ -1,0 +1,48 @@
+/*********** Apparences ************/
+
+// effets :
+.opacity {
+    opacity: 0.5;
+}
+.plan-shadow {
+    box-shadow: 5px 5px 5px mediumslateblue;
+}
+
+/*polices*/
+.bold {
+    font-weight: bold;
+}
+.not-bold {
+    font-weight: initial;
+}
+.italic {
+    font-style: italic;
+}
+.white-font {
+    color: white;
+}
+.brdx-font {
+    color: $brdx-color;
+}
+.prune-font {
+    color: $prune-color;
+}
+.font-size-1-4 {
+	font-size: 1.4em;
+}
+
+/*backgrounds*/
+.mauve-bkgd {
+    background-color: $mauve-color;
+}
+.brdx-bkgd {
+    background-color: $brdx-color;
+}
+.prune-bkgd {
+    background-color: $prune-color;
+}
+
+// borders :
+.border-radius-15 {
+    border-radius: 15px;
+}
